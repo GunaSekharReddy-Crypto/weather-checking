@@ -1,38 +1,54 @@
-.App {
+
+
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card{
+  border-radius: 15px;
+  margin-top: 100px;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input{
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+input[type="submit"]{
+  border:2px solid blue;
+  cursor:pointer;
+  padding: 5px;
+  font-size:18px;
+  border-radius:10px;
+  text-align: center;
+  /* background-image: linear-gradient(to right, rgba(295,0,0,0), rgba(255,0,0,1)); */
+  background-image: radial-gradient(circle, red, yellow, green,white);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="submit"]:hover{
+  border:2px solid black;
+  cursor:pointer;
+  font-size:19px;
+  border-radius:10px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table, th, td {
+  border:1px solid black;
+  color: aliceblue;
+  padding: 10px;
+}
+th{
+  font-family:'Courier New', Courier, monospace;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
